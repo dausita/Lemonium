@@ -23,6 +23,18 @@ local KeyInput = MainTab:AddInput("KeyInput", {
     Finished = false
 })
 
+MainTab:AddButton({
+    Title = "Get Key",
+    Description = "Click to copy Discord link",
+    Callback = function()
+        setclipboard("https://discord.gg/9e3aP6q9fR")
+        Fluent:Notify({
+            Title = "Link Copied",
+            Content = "Discord link copied to clipboard!",
+            Duration = 3
+        })
+    end
+})
 
 MainTab:AddButton({
     Title = "Verify Key",
@@ -37,9 +49,7 @@ MainTab:AddButton({
                 Duration = 3
             })
 
-
             loadstring(game:HttpGet("https://raw.githubusercontent.com/dausita/LemoniumHub/main/LemoniumHub.lua"))()
-
 
             task.wait(1)
             Window:Destroy()
