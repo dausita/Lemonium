@@ -38,7 +38,7 @@ MainTab:AddButton({
             })
 
 
-            loadstring(game:HttpGet("https://pastebin.com/raw/example"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/dausita/LemoniumHub/main/LemoniumHub.lua"))()
 
 
             task.wait(1)
