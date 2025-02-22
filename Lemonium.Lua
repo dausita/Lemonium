@@ -1,6 +1,6 @@
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
-local CorrectKey = "greenapple"
+local CorrectKey = "suluk"
 
 
 local Window = Fluent:CreateWindow({
